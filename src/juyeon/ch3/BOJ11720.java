@@ -1,5 +1,7 @@
 package juyeon.ch3;
 
+import java.util.Scanner;
+
 public class BOJ11720 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,7 +16,7 @@ public class BOJ11720 {
         String[] str = sc.next().split("");
         int sum = 0;
         for( int i = 0; i < N; i++ ){
-            sum += parseInt(str[i]);
+            sum += Integer.parseInt(str[i]);
         }
 
         System.out.println(sum);
