@@ -7,7 +7,7 @@ public class BOJ1546 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int subjectNUM = scan.nextInt();  // 개행문자
-        scan.nextLine();
+//        scan.nextLine();
 
 //        String[] str = scan.nextLine().split(" ");
         int[] scoreArr = new int[subjectNUM];
