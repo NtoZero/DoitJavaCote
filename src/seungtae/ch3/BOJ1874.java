@@ -48,9 +48,9 @@ public class BOJ1874 {
                     stack.push(naturalCount++);
                     sb.append("+\n");
                 }
-                // curNum < naturalCount가 되는 순간 스택의 마지막 요소 pop
-                lastPop = stack.pop();
-                sb.append("-\n");
+                // curNum == naturalCount가 되는 순간 스택의 마지막 요소 pop
+                lastPop = stack.pop(); // 1 2 3 // 자연수 5
+                sb.append("-\n"); // + + + + -(4)
             }
             // arr의 i번 요소(현재 수)가 자연수 미만일 때 pop (curNum<naturalCount)
             else{
