@@ -64,14 +64,15 @@ public class BOJ12891 {
 
         if(Acount>=Anum && Ccount>=Cnum && Gcount>=Gnum && Tcount>=Tnum) result++;
 
-                            //end는 outOfInex 방지를 위해 S 미만이라는 조건 추가 (S-1까지 가능)
+                            //end는 outOfIndex 방지를 위해 S 미만이라는 조건 추가 (S-1까지 가능)
         for(int i=0; i <S && end < S; i++) {
             //제외할 문자
-            char except = Dna.charAt(start);
+            char except = Dna.charAt(start);  //   3 4 5 6 7 8 9 10
             if(except == 'A') Acount--;
             else if(except == 'C') Ccount--;
             else if(except == 'G') Gcount--;
             else if(except == 'T') Tcount--;
+
             //포함할 문자
             char inclusion = Dna.charAt(end); // OutOfIndex 발생지점
             if(inclusion == 'A') Acount++;
