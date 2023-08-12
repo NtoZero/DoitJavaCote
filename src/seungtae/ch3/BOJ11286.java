@@ -41,6 +41,9 @@ public class BOJ11286 {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
+        // Person.age = 1 .name="이승태"
+
+                                                                // new Comparator 익명 객체
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>((o1, o2) -> {
             int FirstAbs = Math.abs(o1);
             int SecondAbs = Math.abs(o2);
@@ -55,10 +58,10 @@ public class BOJ11286 {
             int check = sc.nextInt();
             if(check == 0) {
                 if (priorityQueue.isEmpty()) System.out.println(0);
-                else {
+                else { // 큐가 비어 있지 않으면
                     System.out.println(priorityQueue.poll());
                 }
-            }  else {
+            }  else { // check != 0
                 priorityQueue.add(check);
             }
         }

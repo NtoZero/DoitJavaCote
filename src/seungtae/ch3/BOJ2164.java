@@ -31,6 +31,7 @@ public class BOJ2164 {
 //        }
 
         int count = 0; //번갈아가는 횟수를 세기 위한 count
+
         while(!queue.isEmpty()) {
 
             if(queue.size()==1) {
@@ -47,5 +48,8 @@ public class BOJ2164 {
             count++;
         }
     }
-
 }
+
+/*
+
+ */
