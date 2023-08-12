@@ -45,7 +45,7 @@ public class BOJ11286 {
             int FirstAbs = Math.abs(o1);
             int SecondAbs = Math.abs(o2);
             if(FirstAbs == SecondAbs) {
-                return o1 - o2;
+                return o1 - o2; //오름차순
             } else {
                 return FirstAbs - SecondAbs;
             }
