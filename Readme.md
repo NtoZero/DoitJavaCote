@@ -37,10 +37,12 @@
 12. 오큰수 구하기(17298) :https://www.acmicpc.net/problem/17298
 13. 카드 게임(2164) :https://www.acmicpc.net/problem/2164
 14. 절대값 힙 구현하기(11286) :https://www.acmicpc.net/problem/11286
----
+
 
 ### 챕터 4 - 정렬
+
 ---
+
 15. 수 정렬하기1(2750) : https://www.acmicpc.net/problem/2750 - 8/14
 16. 버블 소트 프로그램1(1377) : https://www.acmicpc.net/problem/1377
 17. 선택 정렬(1427) : https://www.acmicpc.net/problem/1427 - 8/14
