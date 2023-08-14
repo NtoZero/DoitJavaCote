@@ -13,7 +13,9 @@ public class BOJ11286 {
         int n = Integer.parseInt(br.readLine());
 
         // queue에들어가는 Integer를 Math.abs로 변환하여 비교 (두 값을) -> 실패
-        // Queue<Integer> queue = new PriorityQueue<>(Comparator.comparingInt(Math::abs);
+        // Queue<Integer> queue = new PriorityQueue<>(Comparator.comparingInt(Math::abs));
+        // 들어가는 순서에 따라 queue 되기 때문에..
+
         Queue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>() {
             @Override
             public int compare(Integer o1, Integer o2) {

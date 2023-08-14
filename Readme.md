@@ -51,9 +51,10 @@
 21. 버블 소트 프로그램 2 (1517) : https://www.acmicpc.net/problem/1517
 22. 수 정렬하기 3 (10989) : https://www.acmicpc.net/problem/10989
 
+---
 
 ### 챕터 5 - 탐색
 
----
+
 
 test
