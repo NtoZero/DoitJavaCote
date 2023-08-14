@@ -42,11 +42,11 @@
 ---
 ### 챕터 4 - 정렬
 
-15. 수 정렬하기1(2750) : https://www.acmicpc.net/problem/2750 - 8/14
-16. 버블 소트 프로그램1(1377) : https://www.acmicpc.net/problem/1377
-17. 선택 정렬(1427) : https://www.acmicpc.net/problem/1427 - 8/14
-18. ATM 인출 시간 계산하기(11399) : https://www.acmicpc.net/problem/11399
-19. K번째 수 구하기(11005) : https://www.acmicpc.net/problem/11004
+15. 수 정렬하기1(2750) : https://www.acmicpc.net/problem/2750 
+16. 버블 소트 프로그램1(1377) : https://www.acmicpc.net/problem/1377 - 8/17
+17. 선택 정렬(1427) : https://www.acmicpc.net/problem/1427 
+18. ATM 인출 시간 계산하기(11399) : https://www.acmicpc.net/problem/11399 - 8/17
+19. K번째 수 구하기(11005) : https://www.acmicpc.net/problem/11004 - 8/17
 20. 수 정렬하기2 (2751) : https://www.acmicpc.net/problem/2751
 21. 버블 소트 프로그램 2 (1517) : https://www.acmicpc.net/problem/1517
 22. 수 정렬하기 3 (10989) : https://www.acmicpc.net/problem/10989
