@@ -1,4 +1,4 @@
-package seungtae.ch3;
+package seungtae.ch4;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -7,8 +7,8 @@ public class BOJ1427 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-//        String str = sc.nextLine(); // 이거로 왜 안받아지지?
-        String str = sc.next();
+        String str = sc.nextLine(); // 이거로 왜 안받아지지?
+//        String str = sc.next();
         int[] arr = new int[str.length()];
 
         for(int i=0; i<str.length(); i++) {
