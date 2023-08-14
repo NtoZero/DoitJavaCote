@@ -25,8 +25,8 @@ public class BOJ2164 {
         // 또 하나 빼서 저장
         // 하나 남을 때 까지.. * 컬렉션 프레임워크 타입의 길이는 size()
         while (queue.size() > 1) {
-            queue.poll();
-            queue.add(queue.poll());
+            queue.poll(); //  하나 폴
+            queue.add(queue.poll()); // 그 다음 수 저장
         }
         // 남은 거 poll()
         System.out.println(queue.poll());
