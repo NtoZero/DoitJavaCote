@@ -1,4 +1,4 @@
-package seungtae.ch3;
+package seungtae.ch4;
 
 // 수 정렬하기 : https://www.acmicpc.net/problem/2750
 
