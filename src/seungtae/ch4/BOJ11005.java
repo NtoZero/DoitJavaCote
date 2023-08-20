@@ -78,7 +78,7 @@ public class BOJ11005 {
                 j--;
             }
             // pivot보다 큰 수가 나올 때까지 i++
-            while ( i <= end) {
+            while ( i <= end && pivot > arr[i]) {
                 i++;
             }
             if (i <= j) {
