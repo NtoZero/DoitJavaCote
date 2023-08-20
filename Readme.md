@@ -47,9 +47,9 @@
 17. 선택 정렬(1427) : https://www.acmicpc.net/problem/1427 
 18. ATM 인출 시간 계산하기(11399) : https://www.acmicpc.net/problem/11399 - 8/17
 19. K번째 수 구하기(11005) : https://www.acmicpc.net/problem/11004 - 8/17
-20. 수 정렬하기2 (2751) : https://www.acmicpc.net/problem/2751
-21. 버블 소트 프로그램 2 (1517) : https://www.acmicpc.net/problem/1517
-22. 수 정렬하기 3 (10989) : https://www.acmicpc.net/problem/10989
+20. 수 정렬하기2 (2751) : https://www.acmicpc.net/problem/2751 - 8/27
+21. 버블 소트 프로그램 2 (1517) : https://www.acmicpc.net/problem/1517 - 8/27
+22. 수 정렬하기 3 (10989) : https://www.acmicpc.net/problem/10989 - 8/27
 
 ---
 
