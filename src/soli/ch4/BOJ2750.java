@@ -1,4 +1,4 @@
-package soli.ch3;
+package soli.ch4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
