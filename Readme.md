@@ -66,5 +66,22 @@
 
 ### 챕터 5 - 탐색
 
+- 깊이 우선 탐색
+23. 연결 요소의 개수 구하기(11724) : https://www.acmicpc.net/problem/11724
+24. 신기한 소수 찾기(2023) : https://www.acmicpc.net/problem/2023
+25. 친구 관계 파악하기(13023) : https://www.acmicpc.net/problem/13023
 
+- 너비 우선 탐색
+26. DFS와 BFS 프로그램(1260) : https://www.acmicpc.net/problem/1260
+27. 미로 탐색하기(2178) : https://www.acmicpc.net/problem/2178
+28. 트리의 지름 구하기(1167) : https://www.acmicpc.net/problem/1167
+
+- 이진 탐색
+29. 원하는 정수 찾기(1920) : https://www.acmicpc.net/problem/1920
+30. 블루레이 만들기(2343) : https://www.acmicpc.net/problem/2343
+31. 배열에서 k번째 수 찾기(1300) : https://www.acmicpc.net/problem/1300
+
+---
+
+### 챕터 6 - 그리디
 
