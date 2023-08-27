@@ -89,7 +89,7 @@ public class BOJ2751 {
 //     * @param right = 배열 끝 점
 //     */
 //    private static void merge( int[] arr, int left, int mid, int right) {
-//        int[] sorted = new int[arr.length];
+//        int[] sorted = new int[arr.length]; // 🚨 얘가 문제 -> 따로 넣어주면 재귀 불러질 때 마다 배열을 넣어주기 때문에
 //
 //        int l = left;
 //        int start = mid + 1; // 두번째 배열의 시작점
