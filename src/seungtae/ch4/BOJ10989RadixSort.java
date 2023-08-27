@@ -1,6 +1,9 @@
 package seungtae.ch4;
 
 //22. 수 정렬하기 3 (10989) : https://www.acmicpc.net/problem/10989
+// [기수정렬 개념] https://www.youtube.com/watch?v=j9SGZIbIhxM&t=1080s
+// [기수정렬 상세] https://rninche01.tistory.com/entry/%EC%A0%95%EB%A0%AC-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-05-%EA%B3%84%EC%88%98-%EB%B0%8F-%EA%B8%B0%EC%88%98-%EC%A0%95%EB%A0%ACCounting-Sort-Radix-Sort
+// [누적 합 / 역순 설명] https://m.blog.naver.com/adamdoha/222015268529
 //[참고] 기수정렬 : https://lktprogrammer.tistory.com/48
 // [다른 풀이 - 계수정렬] https://st-lab.tistory.com/107
 // [다른 풀이 - 계수정렬2] https://velog.io/@lifeisbeautiful/Java-%EB%B0%B1%EC%A4%80-10989%EB%B2%88-%EC%88%98-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B03-%EC%9E%90%EB%B0%94
@@ -58,15 +61,15 @@ public class BOJ10989RadixSort {
             int[] bucket = new int[10];
 
             for(int i=0; i< arr.length; i++) {
-                bucket[(arr[i]/jarisu) % 10]++; // arr[i]의 일의 자리부터 시작
+                bucket[(arr[i]/jarisu) % 10]++; // arr[i]의 일의 자리부터 시작 (bucket[5]=2)
             }
 
             for(int i=1; i<10; i++) {   // 합 배열을 이용해 index 계산 (so, 0번 인덱스는 제외하고 시작)
                 bucket[i] += bucket[i-1];
             }
 
-            for(int i = arr.length-1; i>=0; i--) { // 현재 자릿수를 기준으로 정렬하기 (그런데 왜 역산?)
-                output[bucket[(arr[i]/jarisu %10)]-1] = arr[i]; //(1을 빼주는 이유는 output배열 인덱스가 0부터 시작하기 때문)
+            for(int i = arr.length-1; i>=0; i--) { // 현재 자릿수를 기준으로 정렬하기 (그런데 왜 역순?)
+                output[bucket[(arr[i]/jarisu %10)]-1] = arr[i]; //(1을 빼주는 이유는 누적합의 최대수가 인덱스를 벗어나기 때문)
                 bucket[(arr[i]/jarisu)%10]--; // 해당 버킷의 개수 감소
             }
 
@@ -77,10 +80,5 @@ public class BOJ10989RadixSort {
             jarisu = jarisu*10; // 자릿수 증가
             count++;
         }
-
-
-
     }
-
-
 }
