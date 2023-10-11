@@ -20,7 +20,7 @@ public class BOJ10989 {
         Arrays.sort(arr);
 
         for(int num : arr) {
-            sb.append(arr[i]).append('\n');
+            sb.append(arr[N]).append('\n');
         }
         System.out.println(sb);
     }
