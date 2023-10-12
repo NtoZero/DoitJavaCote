@@ -1,11 +1,12 @@
 //https://www.acmicpc.net/problem/1546
 
-package seungtae.ch3;
+package seungtae.ch3.ch3_1_sumNumbers;
 
-import java.util.*;
+import problems.ch3_data_structure.ch3_1_sumNumbers.P2_1546;
+
 import java.io.*;
 
-public class BOJ1546_RE {
+public class S2_BOJ1546_RE implements P2_1546 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

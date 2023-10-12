@@ -1,10 +1,12 @@
 //수들의 합5 : https://www.acmicpc.net/problem/2018
 
-package seungtae.ch3;
+package seungtae.ch3.ch3_3_two_pointer;
+
+import problems.ch3_data_structure.ch3_3_two_pointer.P6_2018;
 
 import java.util.Scanner;
 
-public class BOJ2018 {
+public class S6_BOJ2018 implements P6_2018 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

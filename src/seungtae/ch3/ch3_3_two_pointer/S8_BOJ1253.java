@@ -1,9 +1,11 @@
-package seungtae.ch3;
+package seungtae.ch3.ch3_3_two_pointer;
+
+import problems.ch3_data_structure.ch3_3_two_pointer.P8_1253;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BOJ1253 {
+public class S8_BOJ1253 implements P8_1253 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

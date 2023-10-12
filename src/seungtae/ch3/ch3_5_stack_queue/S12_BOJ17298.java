@@ -1,12 +1,13 @@
 // 오큰수 구하기(17298) :https://www.acmicpc.net/problem/17298
 
-package seungtae.ch3;
+package seungtae.ch3.ch3_5_stack_queue;
+
+import problems.ch3_data_structure.ch3_5_stack_queue.P12_17298;
 
 import java.io.*;
-import java.util.Scanner;
 import java.util.Stack;
 
-public class BOJ17298 {
+public class S12_BOJ17298 implements P12_17298 {
     public static void main(String[] args) throws IOException {
 //        Scanner sc = new Scanner(System.in);
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));

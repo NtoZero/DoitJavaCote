@@ -1,11 +1,12 @@
 //https://www.acmicpc.net/problem/11720
 
-package seungtae.ch3;
+package seungtae.ch3.ch3_1_sumNumbers;
 
-import java.util.*;
+import problems.ch3_data_structure.ch3_1_sumNumbers.P1_11720;
+
 import java.io.*;
 
-public class BOJ11720_RE {
+public class S1_BOJ11720_RE implements P1_11720 {
     /*
         시간 복잡도 : O(N)
         N의 최대 모수 100

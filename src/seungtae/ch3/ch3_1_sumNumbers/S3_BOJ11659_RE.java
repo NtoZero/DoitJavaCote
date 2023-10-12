@@ -1,9 +1,13 @@
-package seungtae.ch3;
+//https://www.acmicpc.net/problem/11659
+
+package seungtae.ch3.ch3_1_sumNumbers;
+
+import problems.ch3_data_structure.ch3_1_sumNumbers.P3_11659;
 
 import java.util.*;
 import java.io.*;
 
-public class BOJ11659_RE {
+public class S3_BOJ11659_RE implements P3_11659 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

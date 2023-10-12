@@ -1,11 +1,13 @@
 // 스택으로 오름차순 수열 만들기 https://www.acmicpc.net/problem/1874
 
-package seungtae.ch3;
+package seungtae.ch3.ch3_5_stack_queue;
+
+import problems.ch3_data_structure.ch3_5_stack_queue.P11_1874;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class BOJ1874 {
+public class S11_BOJ1874 implements P11_1874 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

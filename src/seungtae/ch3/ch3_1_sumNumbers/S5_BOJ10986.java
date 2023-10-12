@@ -1,9 +1,11 @@
-package seungtae.ch3;
+package seungtae.ch3.ch3_1_sumNumbers;
+
+import problems.ch3_data_structure.ch3_1_sumNumbers.P5_10986;
 
 import java.util.Scanner;
 
 // https://www.acmicpc.net/problem/10986 : 나머지 합 52p
-public class BOJ10986 {
+public class S5_BOJ10986 implements P5_10986 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

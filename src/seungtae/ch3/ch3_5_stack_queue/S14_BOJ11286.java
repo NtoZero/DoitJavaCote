@@ -1,13 +1,13 @@
 // BOJ11286 절대값 힙 : https://www.acmicpc.net/problem/11286
 
-package seungtae.ch3;
+package seungtae.ch3.ch3_5_stack_queue;
 
-import java.util.Arrays;
-import java.util.Comparator;
+import problems.ch3_data_structure.ch3_5_stack_queue.P14_11286;
+
 import java.util.PriorityQueue;
 import java.util.Scanner;
 
-public class BOJ11286 {
+public class S14_BOJ11286 implements P14_11286 {
     /*
         문제 분석
         - 시간 복잡도 : 시간 제한이 1초(10^8) , N의 최대수 10^5

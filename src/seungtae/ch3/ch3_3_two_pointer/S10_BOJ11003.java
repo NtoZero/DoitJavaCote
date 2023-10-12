@@ -1,9 +1,11 @@
 // 최솟값 찾기 : https://www.acmicpc.net/problem/11003
-package seungtae.ch3;
+package seungtae.ch3.ch3_3_two_pointer;
+
+import problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
 
 import java.util.Scanner;
 
-public class BOJ11003 {
+public class S10_BOJ11003 implements P10_11003 {
     /*
         - 문제 분석
             - 시간 복잡도 : 2.4초 (2.4 * 10^8) / N의 최대 수 : 5*10^6

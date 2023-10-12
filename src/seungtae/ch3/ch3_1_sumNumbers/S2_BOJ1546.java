@@ -1,8 +1,10 @@
-package seungtae.ch3;
+package seungtae.ch3.ch3_1_sumNumbers;
+
+import problems.ch3_data_structure.ch3_1_sumNumbers.P2_1546;
 
 import java.util.Scanner;
 
-public class BOJ1546 {
+public class S2_BOJ1546 implements P2_1546 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

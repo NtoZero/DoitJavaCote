@@ -1,10 +1,12 @@
 // 구간 합 구하기 5 : https://www.acmicpc.net/problem/11660
 
-package seungtae.ch3;
+package seungtae.ch3.ch3_1_sumNumbers;
+
+import problems.ch3_data_structure.ch3_1_sumNumbers.P4_11660;
 
 import java.util.Scanner;
 
-public class BOJ11660 {
+public class S4_BOJ11660 implements P4_11660 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
