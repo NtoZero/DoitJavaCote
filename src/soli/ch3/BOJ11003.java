@@ -1,6 +1,8 @@
 package soli.ch3;
 
-public class BOJ11003 {
+import problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
+
+public class BOJ11003 implements P10_11003 {
 
     public static void main(String[] args) {
 
@@ -10,6 +12,7 @@ public class BOJ11003 {
         // D 에 저장된 수
         // D =
         // i-L+1
+
 
     }
 }

@@ -27,6 +27,6 @@
 
 <br/>
 
-## [문제 풀이 목록 📜](Question.md)
+## [문제 풀이 목록 📜](Problems.md)
 
 <br/>
