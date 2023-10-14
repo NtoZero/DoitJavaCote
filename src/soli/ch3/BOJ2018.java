@@ -23,5 +23,36 @@ public class BOJ2018 implements P6_2018 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
 
+        int sum = 1; // 시작 값(자연수)
+        int end = 1;
+        int count = 1; // 자기 자신
+        int start = 1;
+
+        while(end < N) {
+            // 만약에 sum 이 N보다 작으면
+            if (sum < N) {
+                // end 증가 시키고
+                end++;
+                // sum + end
+                sum = sum + end;
+            }
+            // 만약에 sum이랑 N이랑 같으면
+            if (sum == N) {
+                // count 개수 하나 올리고
+                count++;
+                // end ++
+                end++;
+                // sum + end ->  sum > N 되기 때문에
+                sum = sum + end;
+            }
+            // sum > N 이면
+            if (sum > N) {
+                // sum =  sum - start (제일 앞에 더해 준 값 지우고)
+                sum = sum - start;
+                // start++;
+                start++;
+            }
+        }
+        System.out.println(count);
     }
 }
