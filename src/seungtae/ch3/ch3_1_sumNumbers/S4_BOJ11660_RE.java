@@ -29,9 +29,7 @@ public class S4_BOJ11660_RE implements P4_11660 {
         for(int i=1; i<=N; i++) {
             st = new StringTokenizer(br.readLine());
             for(int j=1; j<=N; j++) {
-                int k = Integer.parseInt(st.nextToken());
-                arr[i][j] = k;
-                sumArr[i][j] = sumArr[i-1][j] + sumArr[i][j-1] + arr[i][j] - sumArr[i-1][j-1];
+                sumArr[i][j] = sumArr[i-1][j] + sumArr[i][j-1] - sumArr[i-1][j-1] + arr[i][j];
             }
         }
 
@@ -39,12 +37,13 @@ public class S4_BOJ11660_RE implements P4_11660 {
         for(int i=0; i<M; i++) {
             st = new StringTokenizer(br.readLine());
 
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
-            int c = Integer.parseInt(st.nextToken());
-            int d = Integer.parseInt(st.nextToken());
+            int a = Integer.parseInt(st.nextToken()); // x1
+            int b = Integer.parseInt(st.nextToken()); // y1
+            int c = Integer.parseInt(st.nextToken()); // x2
+            int d = Integer.parseInt(st.nextToken()); // y2
 
             int sum = 0;
+                // 합[x2][y2] - 합[x1-1][y2] - 합[x2][y1-1] + 합[x1-1][y1-1]
             sum = sumArr[c][d] - sumArr[a-1][d] - sumArr[c][b-1] + sumArr[a-1][b-1];
 
             bw.write(sum+"\n");
