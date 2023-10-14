@@ -10,6 +10,8 @@ public class S6_BOJ2018_RE implements P6_2018 {
 
     /*
         N : 10^7
+        연속된 자연수의 합을 나타내기 위해서 O(N) 이하의 방법을 사용해야 한다.
+
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -23,18 +25,15 @@ public class S6_BOJ2018_RE implements P6_2018 {
         int end_index =  0;
         int sum = 0;
 
-        // 투 포인터가 순회하며 cnt 집계
-        while(end_index != N) {
+        while(end_index != N) { // 투 포인터가 순회하며 cnt 집계
             if(sum == N) {
                 cnt++;
                 end_index++;
                 sum += end_index;
-            }
-            else if(sum > N) {
+            } else if (sum > N) {
                 sum -= start_index;
                 start_index++;
-            }
-            else { // sum < N
+            } else { // sum < N
                 end_index++;
                 sum += end_index;
             }
