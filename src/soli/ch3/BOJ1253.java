@@ -25,19 +25,20 @@ public class BOJ1253 implements P8_1253 {
         int count = 0;
 
         // int k = 구해야 하는 좋은 수의 인덱스 번호
-        for(int k = N-1; k >= 0 ; k --) {
+        for (int k = 0; k < N; k++) {
+            int num = A[k];
             int i = 0;
-            int j = N - 2;
-            int sum = A[i] + A[j];
+            int j = N - 1;
             // i < j 할 때 까지
             while (i < j) {
+                int sum = A[i] + A[j];
+
                 // 만약에 sum == A[k] 이면
-                if (sum == A[k]) {
+                if (sum == num) {
                     // A[i] ,A[j] 둘 다 A[k]랑 다른지 확인
                     if (i != k && j != k) {
                         count++;
-                        i++;
-                        j--;
+                        break;  // 안하면 중복 생김
                     } else if (i == k) {   // 아니면 (A[i])가 A[k]랑 같으면 i++
                         i++;
                     } else if (j == k) {  // j가 k랑 같으면 j--;
@@ -46,7 +47,7 @@ public class BOJ1253 implements P8_1253 {
                 }
 
                 // 만약에 sum < A[k]이면
-                else if (sum < A[k]) {
+                else if (sum < num) {
                     i++;
                 }
                 // 만약에 sum > A[k]이면
