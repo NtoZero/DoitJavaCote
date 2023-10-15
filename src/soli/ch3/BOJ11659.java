@@ -1,5 +1,7 @@
 package soli.ch3;
 
+import problems.ch3_data_structure.ch3_1_sumNumbers.P3_11659;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -11,7 +13,7 @@ import java.util.StringTokenizer;
  * 1 <= N <= 1000 개의 수
  * 합을 구해야 하는 구간 i , j
  */
-public class BOJ11659 {
+public class BOJ11659 implements P3_11659 {
     public static void main(String[] args) throws IOException {
         // 합배열 공식
         // S[i] = S[i-1] + A[i] = A[0] + A[1] + A[2]+...+ A[i]
@@ -40,7 +42,6 @@ public class BOJ11659 {
             System.out.println(S[j] - S[i-1]);
         }
 
-//        잘못한 것 -> A도 배열에 넣어서 하려고 했는데 실패
 //        int[] A = new int[N];
 //        for(int k = 0; k <N ; k ++) {
 //            A[k] = Integer.parseInt(st.nextToken());

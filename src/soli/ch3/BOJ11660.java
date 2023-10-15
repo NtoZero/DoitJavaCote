@@ -1,5 +1,7 @@
 package soli.ch3;
 
+import problems.ch3_data_structure.ch3_1_sumNumbers.P4_11660;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +12,7 @@ import java.util.StringTokenizer;
  * 표크기 N, 합 구하는 횟수 M
  * 구간합 (X1,Y1)(X2,Y2)
  */
-public class BOJ11660 {
+public class BOJ11660 implements P4_11660 {
     public static void main(String[] args) throws IOException {
 
         // 합배열 공식
@@ -29,7 +31,6 @@ public class BOJ11660 {
         for(int x = 1; x <= N ; x++) {  // 0부터 해도 되지만 0부터 하면 뒤에가 헷갈려져서 그냥 1부터 함
             st = new StringTokenizer(br.readLine()); // 위치 중요
             for(int y = 1; y <= N ; y++) {
-
                 A[x][y] = Integer.parseInt(st.nextToken());
             }
         }

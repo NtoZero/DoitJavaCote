@@ -1,5 +1,7 @@
 package soli.ch3;
 
+import problems.ch3_data_structure.ch3_1_sumNumbers.P2_1546;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -13,7 +15,7 @@ import java.util.StringTokenizer;
  * 시험 본 과목의 개수 N <=1000
  * 0 <=현재성적 <= 100
  */
-public class BOJ1546 {
+public class BOJ1546 implements P2_1546 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = Integer.parseInt(br.readLine());
