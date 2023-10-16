@@ -25,7 +25,7 @@ public class BOJ10986_RE implements P5_10986 {
         long[] idx = new long[M];
 
         st = new StringTokenizer(br.readLine());
-        for (int i = 1; i < N+1; i++) {
+        for (int i = 1; i <= N; i++) {
             S[i] = ( S[i-1] + Integer.parseInt(st.nextToken()) ) % M;
 
             // 0인 애들은 따로 세어주고
@@ -37,9 +37,7 @@ public class BOJ10986_RE implements P5_10986 {
 
         // 조합 nCr ( n개 중에 r개 뽑기 ) = ( n * n-1 ) / r
         for (int i = 0; i < M; i++) {
-            if (idx[i] > 1) {
                 count += ( idx[i] * ( idx[i] - 1 ) ) / 2;
-            }
         }
 
         System.out.println(count);
