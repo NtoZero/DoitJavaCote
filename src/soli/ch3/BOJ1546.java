@@ -1,6 +1,6 @@
 package soli.ch3;
 
-import problems.ch3_data_structure.ch3_1_sumNumbers.P2_1546;
+import _problems.ch3_data_structure.ch3_1_sumNumbers.P2_1546;
 
 import java.io.BufferedReader;
 import java.io.IOException;

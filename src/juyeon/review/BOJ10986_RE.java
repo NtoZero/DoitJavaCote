@@ -1,6 +1,6 @@
 package juyeon.review;
 
-import problems.ch3_data_structure.ch3_1_sumNumbers.P5_10986;
+import _problems.ch3_data_structure.ch3_1_sumNumbers.P5_10986;
 
 import java.io.BufferedReader;
 import java.io.IOException;

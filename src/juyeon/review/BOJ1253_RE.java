@@ -1,6 +1,6 @@
 package juyeon.review;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P8_1253;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P8_1253;
 
 import java.io.BufferedReader;
 import java.io.IOException;

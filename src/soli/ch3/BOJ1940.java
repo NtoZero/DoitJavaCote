@@ -1,6 +1,6 @@
 package soli.ch3;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P7_1940;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P7_1940;
 
 import java.io.BufferedReader;
 import java.io.IOException;
