@@ -1,6 +1,6 @@
 package seungtae.ch3.ch3_3_two_pointer;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P8_1253;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P8_1253;
 
 import java.util.*;
 import java.io.*;

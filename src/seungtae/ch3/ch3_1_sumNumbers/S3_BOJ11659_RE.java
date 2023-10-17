@@ -2,7 +2,7 @@
 
 package seungtae.ch3.ch3_1_sumNumbers;
 
-import problems.ch3_data_structure.ch3_1_sumNumbers.P3_11659;
+import _problems.ch3_data_structure.ch3_1_sumNumbers.P3_11659;
 
 import java.util.*;
 import java.io.*;

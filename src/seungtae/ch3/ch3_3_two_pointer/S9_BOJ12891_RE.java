@@ -1,6 +1,6 @@
 package seungtae.ch3.ch3_3_two_pointer;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P9_12891;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P9_12891;
 
 import java.io.*;
 import java.util.StringTokenizer;

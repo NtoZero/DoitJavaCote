@@ -1,6 +1,6 @@
 package seungtae.ch3.ch3_3_two_pointer;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P7_1940;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P7_1940;
 
 import java.util.Arrays;
 import java.util.Scanner;
