@@ -1,6 +1,6 @@
 package juyeon.review;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
 
 import java.io.*;
 import java.util.*;
