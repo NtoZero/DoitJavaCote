@@ -2,7 +2,7 @@
 
 package seungtae.ch3.ch3_3_two_pointer;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P6_2018;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P6_2018;
 
 import java.util.Scanner;
 

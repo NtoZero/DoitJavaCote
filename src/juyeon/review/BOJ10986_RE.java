@@ -1,6 +1,6 @@
 package juyeon.review;
 
-import problems.ch3_data_structure.ch3_1_sumNumbers.P5_10986;
+import _problems.ch3_data_structure.ch3_1_sumNumbers.P5_10986;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -19,14 +19,14 @@ public class BOJ10986_RE implements P5_10986 {
         long[] S = new long[N+1];
 
         // M으로 나누어떨어지는 (i,j) 개수
-        int count = 0;
+        long count = 0;
 
        // 나머지값 같은 거 개수 세는 배열
-        int[] idx = new int[M];
+        long[] idx = new long[M];
 
         st = new StringTokenizer(br.readLine());
         for (int i = 1; i <= N; i++) {
-            S[i] = ( S[i-1] + Long.parseLong(st.nextToken()) ) % M;
+            S[i] = ( S[i-1] + Integer.parseInt(st.nextToken()) ) % M;
 
             // 0인 애들은 따로 세어주고
             if (S[i] == 0) count++;
@@ -37,7 +37,7 @@ public class BOJ10986_RE implements P5_10986 {
 
         // 조합 nCr ( n개 중에 r개 뽑기 ) = ( n * n-1 ) / r
         for (int i = 0; i < M; i++) {
-            count += ( idx[i] * ( idx[i] - 1 ) ) / 2;
+                count += ( idx[i] * ( idx[i] - 1 ) ) / 2;
         }
 
         System.out.println(count);

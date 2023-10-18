@@ -1,6 +1,6 @@
 package soli.ch3;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
 
 public class BOJ11003 implements P10_11003 {
 
