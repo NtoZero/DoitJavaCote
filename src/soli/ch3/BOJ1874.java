@@ -1,6 +1,6 @@
 package soli.ch3;
 
-import problems.ch3_data_structure.ch3_5_stack_queue.P11_1874;
+import _problems.ch3_data_structure.ch3_5_stack_queue.P11_1874;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -39,6 +39,7 @@ public class BOJ1874 implements P11_1874 {
                 return;
             }
         }
+
         for (String result : results) {
             System.out.println(result);
         }
