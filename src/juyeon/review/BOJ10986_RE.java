@@ -35,7 +35,7 @@ public class BOJ10986_RE implements P5_10986 {
             idx[(int) S[i]]++;
         }
 
-        // 조합 nCr ( n개 중에 r개 뽑기 ) = ( n * n-1 ) / r
+        // 조합 nCr ( n개 중에 r개 뽑기 ) = ( n * n-1 ) / r!
         for (int i = 0; i < M; i++) {
                 count += ( idx[i] * ( idx[i] - 1 ) ) / 2;
         }
