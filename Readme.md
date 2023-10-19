@@ -8,14 +8,16 @@
 - 일시 : 월, 목 / 오전 10시 ~
 - 장소 : 온라인 / 디스코드
 
+<br/>
 
 ## 참여 방법 🔍
 1. 이 저장소를 `fork` 한다.
 2. 생성된 저장소에 `Github ID`로 폴더를 생성한다.
 3. 알고리즘 풀이 시 problem 폴더의 Interface 를 구현한다.
 4. 풀이 후 원본 저장소에 `PR`를 보낸다. 
-5. 매일 `commit` 한다. 
+5. 매일 `commit` 한다.
 
+<br/>
 
 ## [문제 풀이 목록 📜](Problems.md)
 
@@ -26,7 +28,6 @@
 |:------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------:|
 | <img src="https://github.com/NtoZero/DoitJavaCote/assets/130022922/07efe644-3539-4980-982b-9f44767df1e2" width=200px height = 200px> | <img src="https://github.com/NtoZero/DoitJavaCote/assets/130022922/a25ac42f-86b4-4f9f-80b7-5ca2e883235d" width=200px height = 200px> | <img src="https://github.com/NtoZero/DoitJavaCote/assets/130022922/96b6ea6a-c5cc-4881-8ce2-c4099e8178cc" width=200px height = 200px> |
 |                                                [@NtoZero](https://github.com/NtoZero)                                                |                                             [@seoljuyeon](https://github.com/seoljuyeon)                                             |                                [@luminousol](https://github.com/luminousol)                                |
-
 
 <br/>
 
