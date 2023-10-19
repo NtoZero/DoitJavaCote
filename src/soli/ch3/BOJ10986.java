@@ -43,3 +43,4 @@ public class BOJ10986 implements P5_10986 {
 
     }
 }
+
