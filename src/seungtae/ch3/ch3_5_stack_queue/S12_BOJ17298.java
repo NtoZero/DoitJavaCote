@@ -2,7 +2,7 @@
 
 package seungtae.ch3.ch3_5_stack_queue;
 
-import problems.ch3_data_structure.ch3_5_stack_queue.P12_17298;
+import _problems.ch3_data_structure.ch3_5_stack_queue.P12_17298;
 
 import java.io.*;
 import java.util.Stack;

@@ -2,7 +2,7 @@
 
 package seungtae.ch3.ch3_5_stack_queue;
 
-import problems.ch3_data_structure.ch3_5_stack_queue.P14_11286;
+import _problems.ch3_data_structure.ch3_5_stack_queue.P14_11286;
 
 import java.util.PriorityQueue;
 import java.util.Scanner;

@@ -1,7 +1,7 @@
 // 최솟값 찾기 : https://www.acmicpc.net/problem/11003
 package seungtae.ch3.ch3_3_two_pointer;
 
-import problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
+import _problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
 
 import java.util.Scanner;
 

@@ -3,6 +3,8 @@ package seungtae.ch3.ch3_3_two_pointer;
 import _problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
 
 import java.io.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.StringTokenizer;
 
 public class S10_BOJ11003_RE implements P10_11003 {
@@ -31,9 +33,26 @@ public class S10_BOJ11003_RE implements P10_11003 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
+        Deque<Integer> deque = new ArrayDeque<>();
+
+        // 최소값
+        int min = 0;
+
         // 슬라이딩 윈도우에서 최소값 구하기
         for(int i=1; i<=N; i++) {
+            int start = i-L+1;
+            int end = i;
 
+            while(start<=0 && min==0) {
+
+            }
+
+            if(deque.size()<=L) {
+                deque.addLast(arr[end]);
+            } else {
+                deque.removeFirst();
+                deque.addLast(arr[end]);
+            }
         }
 
         bw.close();
