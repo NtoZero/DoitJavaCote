@@ -47,9 +47,9 @@ public class S10_BOJ11003_RE implements P10_11003 {
 
             }
 
-            if(deque.size()<=L) {
+            if(deque.size()<L) {
                 deque.addLast(arr[end]);
-            } else {
+            } else { // deque.size()>=L
                 deque.removeFirst();
                 deque.addLast(arr[end]);
             }
