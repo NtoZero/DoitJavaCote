@@ -4,7 +4,7 @@ package seungtae.ch4;
 
 import java.util.Scanner;
 
-public class BOJ2750 {
+public class S15_BOJ2750 {
     /*
         시간복잡도 N^2으로 풀어도 풀이가 가능하다.
      */
