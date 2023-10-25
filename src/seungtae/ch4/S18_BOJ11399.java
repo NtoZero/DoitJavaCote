@@ -5,9 +5,8 @@ package seungtae.ch4;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
-public class BOJ11399 {
+public class S18_BOJ11399 {
     /*
         1. 시간 복잡도 : 제한시간(1초) N의 최대값 10^3이므로 N^2 이하의 알고리즘이 권장된다.
         2. 문제 풀이 :
