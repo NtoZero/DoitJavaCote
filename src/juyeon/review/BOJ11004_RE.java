@@ -69,13 +69,9 @@ public class BOJ11004_RE implements P19_11004 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        quickSort(arr);
+        quickSort(arr, 0, arr.length - 1);
 
         System.out.println(arr[K-1]);
-    }
-
-    public static void quickSort(int[] arr) {
-        quickSort(arr, 0, arr.length - 1);
     }
 
     public static void quickSort(int[] arr, int start, int end) {
