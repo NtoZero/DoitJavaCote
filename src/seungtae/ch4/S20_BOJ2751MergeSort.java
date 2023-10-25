@@ -4,7 +4,7 @@ package seungtae.ch4;
 
 import java.io.*;
 
-public class BOJ2751MergeSort {
+public class S20_BOJ2751MergeSort {
     /*
         시간복잡도 : N의 최대 개수 10^6 => NlogN의 알고리즘을 사용하자.
         - 풀이 방식 : 병합정렬
