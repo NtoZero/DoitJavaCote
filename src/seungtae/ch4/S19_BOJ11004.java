@@ -1,13 +1,13 @@
 package seungtae.ch4;
 
-//19. K번째 수 구하기(11005) : https://www.acmicpc.net/problem/11004
+//19. K번째 수 구하기(11004) : https://www.acmicpc.net/problem/11004
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ11005 {
+public class S19_BOJ11004 {
     /*
         문제 풀이 :
             - 시간복잡도 : N의 최대크기 (5,000,000) => NlogN의 이하의 알고리즘으로 푸는 것이 권장된다.
