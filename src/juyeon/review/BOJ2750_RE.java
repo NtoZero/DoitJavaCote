@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 public class BOJ2750_RE implements P15_2750 {
     public static void main(String[] args) throws IOException {
 
-        // (1) array.sort 로 짱 쉽게 풀기
+        // (1) Arrays.sort 로 짱 쉽게 풀기
 //        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //
 //        int N = Integer.parseInt(br.readLine());
