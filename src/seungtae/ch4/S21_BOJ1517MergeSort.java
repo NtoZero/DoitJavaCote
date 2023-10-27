@@ -4,7 +4,7 @@ package seungtae.ch4;
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class BOJ1517MergeSort {
+public class S21_BOJ1517MergeSort {
     static int[] arr, tmp; // 공유할 정적 배열
     static long result = 0; // 카운트할 변수 (int면 틀림)
 
