@@ -26,7 +26,7 @@ public class S21_BOJ1517_RE implements P21_1517 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int N = Integer.valueOf(br.readLine());
+        int N = Integer.parseInt(br.readLine());
 
         arr = new int[N];
         tmp = new int[N];
@@ -68,8 +68,8 @@ public class S21_BOJ1517_RE implements P21_1517 {
         while(low<=mid && high <= end) {
             if(tmp[low]<=tmp[high]) {
                 arr[idx++] = tmp[low++];
-            } else { // tmp[low]<tmp[high]
-                 arr[idx] = tmp[high++];
+            } else { // tmp[low]>tmp[high]
+                 arr[idx++] = tmp[high++];
                  // 오름차순이므로, high 쪽의 데이터 값이 적은 경우에 그 인덱스 차이를 count
                  count += high-idx;
             }
@@ -79,7 +79,6 @@ public class S21_BOJ1517_RE implements P21_1517 {
         while(low<=mid) {
             arr[idx++] = tmp[low++];
         }
-
         while(high<=end) {
             arr[idx++] = tmp[high++];
         }
