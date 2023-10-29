@@ -45,7 +45,7 @@ public class S18_BOJ11399_RE implements P18_11399 {
                 }
             }
 
-            // j가 i로 시작하여 j가 삽입 인덱스보다 클동안에는
+            // j가 i로 시작하여 j가 삽입 인덱스보다 클 동안에는
             for(int j = i; j > cursor; j--) {
                 // (삽입 인덱스 위치 비워주기 위해) 삽입 인덱스 기준으로 한 칸씩 우측으로 당기기
                 arr[j] = arr[j-1];

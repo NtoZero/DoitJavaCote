@@ -51,7 +51,7 @@ public class S19_BOJ11004_RE implements P19_11004 {
         if(start < end) {
             int pivot = partition(arr, start, end);
 
-            if(pivot==K) return; // K번째 수가 pivot이면 끝
+            if(pivot==K) return; // K번째 수가 pivot 인덱스의 위치이면 끝
             else if (K < pivot)
                 quick_sort(arr, start, pivot-1, K);
             else // K > pivot
@@ -60,7 +60,7 @@ public class S19_BOJ11004_RE implements P19_11004 {
     }
 
     private static int partition(int[] arr, int start, int end) {
-        // 시작 인덱스 +1이 end일 경우
+        // 시작 인덱스 +1이 end일 경우 (예외 종료 조건)
         if(start +1 == end) {
             // 그리고 시작 인덱스의 값이 끝 인덱스 값보다 크면 스왑한다.
             if(arr[start] > arr[end]) swap(arr, start, end);
@@ -75,6 +75,8 @@ public class S19_BOJ11004_RE implements P19_11004 {
         int i = start+1;
         int j = end;
 
+        /*
+            //이렇게 하면 틀린다. 바깥 쪽에 while문 하나를 더 붙여야 한다.
         // 피벗보다 작은 수가 나올 때까지 j--
         while(j >= start+1 && pivot < arr[j]) {
             j--;
@@ -85,14 +87,30 @@ public class S19_BOJ11004_RE implements P19_11004 {
             i++;
         }
 
-        // j가 i 이상일 때 i 요소값과 j요소값을 바꿔주고 i++, j--
+        // j가 i 이상일 때 (피봇의 왼쪽 포인터와 오른쪽 포인터의 영역 구분) i 요소값과 j요소값을 바꿔주고 i++, j--
         if(i<=j) {
             swap(arr, i++, j--);
+        }*/
+
+        //while문을 바깥쪽에 하나 더 붙여야 하는 이유? => i가 j를 넘어가는 경우는 볼 필요도 없을 뿐더러 오히려 그 경우에는 오답 산출
+        while(i <= j) {
+            // pivot보다 작은 수가 나올 때까지 j--
+            while(j >= start+1 && pivot < arr[j]) {
+                j--;
+            }
+            // pivot보다 큰 수가 나올 때까지 i++
+            while ( i <= end && pivot > arr[i]) {
+                i++;
+            }
+            if (i <= j) {
+                swap(arr, i++, j--);
+            }
         }
 
-        // 피벗 데이터를 나눠진 두 그룹의 경계 index에 저장
+        // 피벗 데이터와 j의 위치 스왑
         arr[start] = arr[j];
         arr[j] = pivot;
+        // 피벗의 인덱스 j 반환
         return j;
     }
 

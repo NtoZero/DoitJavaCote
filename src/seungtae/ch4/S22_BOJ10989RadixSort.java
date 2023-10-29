@@ -10,10 +10,8 @@ package seungtae.ch4;
 // [다른 풀이 - 삽입, 합병, 힙, 계수] https://upcurvewave.tistory.com/377
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Queue;
 
-public class BOJ10989RadixSort {
+public class S22_BOJ10989RadixSort {
     /*
         시간복잡도 : 10^7 => (nlogn)의 알고리즘 보다 효율적인 알고리즘이 필요
         - 기수 정렬(radix sort) 시간 복잡도 : O(kn) (이때 k는 기수의 길이, 10000 이하이므로 5)

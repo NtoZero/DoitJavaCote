@@ -2,9 +2,11 @@ package seungtae.ch4;
 
 //20. 수 정렬하기2 (2751) : https://www.acmicpc.net/problem/2751
 
+import _problems.ch4.ch4_arrays.P20_2751;
+
 import java.io.*;
 
-public class S20_BOJ2751MergeSort {
+public class S20_BOJ2751MergeSort implements P20_2751 {
     /*
         시간복잡도 : N의 최대 개수 10^6 => NlogN의 알고리즘을 사용하자.
         - 풀이 방식 : 병합정렬
@@ -37,7 +39,7 @@ public class S20_BOJ2751MergeSort {
     private static void mergeSort(int start, int end) {
         if(end - start < 1) return; //탈출 조건 (최소 차이가 1 이상 있어야 시작)
 
-        int middle = start + (end - start)/2; // 중간값 구하기
+        int middle = start + (end - start)/2; // 시작 값과 끝 값 사이 중간값 구하기
 
         mergeSort(start, middle);
         mergeSort(middle+1, end);
