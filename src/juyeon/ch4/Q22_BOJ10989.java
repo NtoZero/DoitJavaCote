@@ -2,9 +2,7 @@ package juyeon.ch4;
 
 import _problems.ch4.ch4_arrays.P22_10989;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Q22_BOJ10989 implements P22_10989 {
 
@@ -13,6 +11,7 @@ public class Q22_BOJ10989 implements P22_10989 {
     public static void main(String[] args) throws IOException {
         // 기수 정렬 이해 못해서 걍 병합 정렬로 풀었습니다 . . . .
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int N = Integer.parseInt(br.readLine());
 
@@ -26,8 +25,11 @@ public class Q22_BOJ10989 implements P22_10989 {
         mergeSort(0, N - 1);
 
         for (int i = 0; i < N; i++) {
-            System.out.println(arr[i]);
+            bw.write(arr[i] + "\n");
         }
+
+        bw.flush();
+        bw.close();
     }
 
     public static void mergeSort(int start, int end) {
