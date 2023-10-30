@@ -2,6 +2,8 @@ package seungtae.ch4;
 
 import _problems.ch4.ch4_arrays.P22_10989;
 
+// https://m.blog.naver.com/adamdoha/222015268529
+
 import java.io.*;
 
 public class S22_BOJ10989_RE implements P22_10989 {
