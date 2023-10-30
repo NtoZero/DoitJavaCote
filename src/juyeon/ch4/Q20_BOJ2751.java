@@ -2,9 +2,7 @@ package juyeon.ch4;
 
 import _problems.ch4.ch4_arrays.P20_2751;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
 public class Q20_BOJ2751 implements P20_2751 {
@@ -69,12 +67,13 @@ public class Q20_BOJ2751 implements P20_2751 {
 
 //       ================================================
 
-//        (4) 병합 정렬로 멋지게 풀어보기 ..... => 시간 초과 ㅇㅈㄹ
+//        (4) 병합 정렬로 멋지게 풀어보기 .....
 
     public static int[] arr, temp;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int N = Integer.parseInt(br.readLine());
 
@@ -88,8 +87,11 @@ public class Q20_BOJ2751 implements P20_2751 {
         mergeSort(0, N - 1);
 
         for (int i = 0; i < N; i++) {
-            System.out.println(arr[i]);
+            bw.write(arr[i] + "\n");
         }
+
+        bw.flush();
+        bw.close();
     }
 
     public static void mergeSort(int start, int end) {
