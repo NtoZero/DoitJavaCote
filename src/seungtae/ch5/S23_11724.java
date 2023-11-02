@@ -8,7 +8,7 @@ import java.util.*;
 public class S23_11724 implements P23_11724 {
     /*
         - DFS(깊이 우선 탐색)
-            - 정의 : 시작 노드에서출발하여 탐색할 한 쪽 분기를 정하여 최대 깊이까지 탐색을 마친 후
+            - 정의 : 시작 노드에서 출발하여 탐색할 한 쪽 분기를 정하여 최대 깊이까지 탐색을 마친 후
                     다음 분기로 이동하여 다시 탐색을 수행
             - 요구
                 1. 배열 (노드 방문 여부를 체크)
@@ -46,7 +46,7 @@ public class S23_11724 implements P23_11724 {
 
         A = new ArrayList[N+1]; // 인접 그래프
         visited = new boolean[N+1];    // 방문 여부
-        Stack<Integer> plan_stack = new Stack<>(); // 방문할 예정 스택
+        Stack<Integer> plan_stack = new Stack<>(); // 방문할 예정 스택 => 필요 없음 (재귀의 호출 스택 활용)
         int result = 0; // 결과값
 
         // 1. 인접 리스트 그래프 초기화
@@ -86,6 +86,14 @@ public class S23_11724 implements P23_11724 {
                 F   F   F   F   F   F
               1에서 시작한 경우
                 T   T   F   F   T   F
+
+             - 순서
+                1 -> 2 -> 5
+                2 VISITED
+                3 -> 4 -> 6 (T T T T T T)
+                4 VISITED
+                5 VISITED
+                6 VISITED
          */
 
         for (int i=1; i<=N; i++) {
@@ -116,3 +124,14 @@ public class S23_11724 implements P23_11724 {
         }
     }
 }
+
+/*
+    참고: 예제 입력 2에 따른 인접 리스트
+1	2,5
+2	1,5,4,3
+3	4,2
+4	3,6,5,2
+5	2,1,4
+6	4
+
+ */
