@@ -1,4 +1,4 @@
-package seungtae.ch5;
+package seungtae.ch5.dfs;
 
 import _problems.ch5_searching.ch5_1_dfs.P23_11724;
 

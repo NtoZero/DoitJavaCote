@@ -1,4 +1,4 @@
-package seungtae.ch5;
+package seungtae.ch5.dfs;
 
 import _problems.ch5_searching.ch5_1_dfs.P25_13023;
 
@@ -91,7 +91,7 @@ public class S25_13023 implements P25_13023 {
 }
 
 /*
-    예제2
+    예제2   0 -> 1 -> 2 -> 3 (4)
 0	1,3
 1	0,2,4
 2	1,3
