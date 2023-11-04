@@ -2,9 +2,10 @@ package seungtae.ch5.bfs;
 
 import _problems.ch5_searching.ch5_2_bfs.P26_1260;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
-import java.util.stream.*;
 
 public class S26_BOJ1260 implements P26_1260 {
     /*
@@ -54,16 +55,14 @@ public class S26_BOJ1260 implements P26_1260 {
             A[node].add(near);
             A[near].add(node);
         }
-        //dfs
-        sb.append(V+" ");
-        for (int i = V; i <= N; i++) {
-            // 인접 노드가 여러 개라면 숫자가 적은 것부터 방문
-            Collections.sort(A[i]);
 
-            if (!visited[i]) {
-                dfs(i, 1);
-            }
+        // 적은 순부터 방문
+        for(int i=1; i<=N; i++) {
+            Collections.sort(A[i]);
         }
+
+        //dfs
+        dfs(V);
 
         sb.append("\n"); // bfs 이전 개행
         //방문 배열 초기화
@@ -72,22 +71,13 @@ public class S26_BOJ1260 implements P26_1260 {
         }
 
         //bfs
-        sb.append(V+" ");
-        for (int i = V; i <= N; i++) {
-            // 인접 노드가 여러 개라면 숫자가 적은 것부터 방문 (FIFO, 오름차순 정렬)
-
-
-            // 방문한 적 없다면
-            if(!visited[i]) {
-                bfs(i);
-            }
-        }
-
+        bfs(V);
         System.out.println(sb);
     }
-        static void dfs ( int vertex, int depth ){
+        static void dfs ( int vertex){
+            sb.append(vertex+" ");
             //방문 했으면 종료
-            if(visited[vertex]) return;
+//            if(visited[vertex]) return; -> x 방문 불가능 (for문 안에서 필터링)
 
             // 방문 전적이 없다면 true로 전환
             visited[vertex] = true;
@@ -95,30 +85,26 @@ public class S26_BOJ1260 implements P26_1260 {
             for(int adjacency : A[vertex]) { // 해당 노드의 인접 리스트 순회
                 // 방문 x 인접 노드만 순회
                 if(!visited[adjacency]) {
-                    sb.append(adjacency + " ");
-                    dfs(adjacency, depth+1);
+                    dfs(adjacency);
                 }
             }
         }
 
         static void bfs (int vertex) {
-            if(visited[vertex]) return;
-
+            //큐에 원소 포함하기
+            queue.add(vertex);
             visited[vertex] = true;
 
-            // 큐에 원소 포함하기
-            for(int adj : A[vertex]) {
-                if(!visited[adj])
-                    queue.add(adj);
-            }
-            // FIFO하며 방문하기
-            int poll = 0;
-            if(!queue.isEmpty())
-                poll = queue.poll();
-            else return;
-            if(!visited[poll]) {
-                sb.append(poll+ " ");
-                bfs(poll);
+            while(!queue.isEmpty()) {
+                //FIFO
+                int poll = queue.poll();
+                sb.append(poll + " ");
+                for (int i : A[poll]) { //꺼내진 원소배열의 인접 노드 순회
+                    if(!visited[i]) {
+                        visited[i] = true;
+                        queue.add(i);
+                    }
+                }
             }
         }
 }
