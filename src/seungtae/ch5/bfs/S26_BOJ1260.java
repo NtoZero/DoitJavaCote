@@ -55,9 +55,10 @@ public class S26_BOJ1260 implements P26_1260 {
             A[near].add(node);
         }
         //dfs
-        for (int i = 1; i <= N; i++) {
-            // 인접 노드가 여러 개라면 숫자가 적은 것부터 방문 (해당 행 내림차순 정렬 - 스택, LIFO)
-            A[i].stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList()); // NlogN
+        sb.append(V+" ");
+        for (int i = V; i <= N; i++) {
+            // 인접 노드가 여러 개라면 숫자가 적은 것부터 방문
+            Collections.sort(A[i]);
 
             if (!visited[i]) {
                 dfs(i, 1);
@@ -71,9 +72,10 @@ public class S26_BOJ1260 implements P26_1260 {
         }
 
         //bfs
-        for (int i = 1; i <= N; i++) {
+        sb.append(V+" ");
+        for (int i = V; i <= N; i++) {
             // 인접 노드가 여러 개라면 숫자가 적은 것부터 방문 (FIFO, 오름차순 정렬)
-            A[i].stream().sorted().collect(Collectors.toList());
+
 
             // 방문한 적 없다면
             if(!visited[i]) {
@@ -91,10 +93,11 @@ public class S26_BOJ1260 implements P26_1260 {
             visited[vertex] = true;
 
             for(int adjacency : A[vertex]) { // 해당 노드의 인접 리스트 순회
-                sb.append(adjacency + " ");
                 // 방문 x 인접 노드만 순회
-                if(!visited[adjacency])
+                if(!visited[adjacency]) {
+                    sb.append(adjacency + " ");
                     dfs(adjacency, depth+1);
+                }
             }
         }
 
@@ -105,11 +108,17 @@ public class S26_BOJ1260 implements P26_1260 {
 
             // 큐에 원소 포함하기
             for(int adj : A[vertex]) {
-                queue.add(adj);
+                if(!visited[adj])
+                    queue.add(adj);
             }
             // FIFO하며 방문하기
-            int poll = queue.poll();
-            sb.append(poll+ " ");
-            bfs(poll);
+            int poll = 0;
+            if(!queue.isEmpty())
+                poll = queue.poll();
+            else return;
+            if(!visited[poll]) {
+                sb.append(poll+ " ");
+                bfs(poll);
+            }
         }
 }
