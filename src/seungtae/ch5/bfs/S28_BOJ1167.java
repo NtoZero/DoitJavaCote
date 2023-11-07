@@ -2,6 +2,11 @@ package seungtae.ch5.bfs;
 
 import _problems.ch5_searching.ch5_2_bfs.P28_1167;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 public class S28_BOJ1167 implements P28_1167 {
     /*
         알고리즘 : BFS (너비 우선 탐색)
@@ -20,7 +25,15 @@ public class S28_BOJ1167 implements P28_1167 {
         탐색을 시작할 정점의 번호 V
 
      */
-    public static void main(String[] args) {
 
+    // 상하좌우 이동 -> 동 남 서 북 (배열 상 x축 y축이 뒤집혀 있다. 행이 x, 열이 y.)
+    static int[] dx = {0, 1, 0, -1};
+    static int[] dy = {1, 0, -1, 0};
+    static int[][] A; // 인접 행렬 이차원 배열
+    static boolean[][] visited;
+    static Queue<int[]> queue = new ArrayDeque<>(); //x, y의 좌표값을 기록할 수 있어야 함.
+
+    public static void main(String[] args) {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     }
 }
