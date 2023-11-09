@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 // https://www.acmicpc.net/problem/12891
-public class BOJ12891 {
+public class Q9_BOJ12891 {
 
     // 필요한 acgt 개수
     static int[] acgt = new int[4];

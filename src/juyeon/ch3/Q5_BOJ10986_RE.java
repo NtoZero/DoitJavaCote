@@ -1,4 +1,4 @@
-package juyeon.review;
+package juyeon.ch3;
 
 import _problems.ch3_data_structure.ch3_1_sumNumbers.P5_10986;
 
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ10986_RE implements P5_10986 {
+public class Q5_BOJ10986_RE implements P5_10986 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());

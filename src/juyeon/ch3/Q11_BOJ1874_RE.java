@@ -1,11 +1,11 @@
-package juyeon.review;
+package juyeon.ch3;
 
 import _problems.ch3_data_structure.ch3_5_stack_queue.P11_1874;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class BOJ1874_RE implements P11_1874 {
+public class Q11_BOJ1874_RE implements P11_1874 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

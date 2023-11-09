@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 
 //https://www.acmicpc.net/problem/11286
 //https://velog.io/@robolab1902/Java-Priority-Queue-매개변수에-람다식-쓰는-이유가-뭐야
-public class BOJ11286 {
+public class Q14_BOJ11286 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

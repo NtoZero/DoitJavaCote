@@ -1,4 +1,4 @@
-package juyeon.review;
+package juyeon.ch3;
 
 import _problems.ch3_data_structure.ch3_5_stack_queue.P14_11286;
 
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class BOJ11286_RE implements P14_11286 {
+public class Q14_BOJ11286_RE implements P14_11286 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

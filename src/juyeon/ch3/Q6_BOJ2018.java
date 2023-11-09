@@ -2,7 +2,7 @@ package juyeon.ch3;
 
 import java.util.Scanner;
 
-public class BOJ2018 {  // 투 포인터
+public class Q6_BOJ2018 {  // 투 포인터
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

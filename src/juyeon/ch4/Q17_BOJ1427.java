@@ -1,10 +1,9 @@
 package juyeon.ch4;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 // https://www.acmicpc.net/problem/1427     500613009
-public class BOJ1427 {
+public class Q17_BOJ1427 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String N = sc.next();

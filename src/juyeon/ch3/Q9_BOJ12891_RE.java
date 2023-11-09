@@ -1,4 +1,4 @@
-package juyeon.review;
+package juyeon.ch3;
 
 import _problems.ch3_data_structure.ch3_3_two_pointer.P9_12891;
 
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ12891_RE implements P9_12891 {
+public class Q9_BOJ12891_RE implements P9_12891 {
 
     static int[] acgt = new int[4];
     static int[] check = new int[4];

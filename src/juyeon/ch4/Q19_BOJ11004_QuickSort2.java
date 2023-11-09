@@ -1,4 +1,4 @@
-package juyeon.review;
+package juyeon.ch4;
 
 import _problems.ch4.ch4_arrays.P19_11004;
 
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class BOJ11004_QuickSort2 implements P19_11004 {
+public class Q19_BOJ11004_QuickSort2 implements P19_11004 {
     public static void main(String[] args) throws IOException {
 //    (4) QuickSort + "K" ( 지피티 개천재)
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

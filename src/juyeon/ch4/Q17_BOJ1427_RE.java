@@ -1,15 +1,12 @@
-package juyeon.review;
+package juyeon.ch4;
 
 import _problems.ch4.ch4_arrays.P17_1427;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.PriorityQueue;
 
-public class BOJ1427_RE implements P17_1427 {
+public class Q17_BOJ1427_RE implements P17_1427 {
     public static void main(String[] args) throws IOException {
 
         // (1) Arrays.sort 로 짱 쉽게 풀기

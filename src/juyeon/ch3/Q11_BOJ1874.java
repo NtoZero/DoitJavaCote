@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 // https://www.acmicpc.net/problem/1874
-public class BOJ1874 {
+public class Q11_BOJ1874 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         StringBuilder sb = new StringBuilder(); // 출력할 결과물 저장

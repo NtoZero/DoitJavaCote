@@ -3,7 +3,7 @@ package juyeon.ch4;
 import java.util.*;
 
 // https://www.acmicpc.net/problem/2750
-public class BOJ2750 {
+public class Q15_BOJ2750 {
     public static void main(String[] args) {
 
 //        1. Arrays.sort() 로 짱 쉽게 풀기

@@ -2,7 +2,7 @@ package juyeon.ch3;
 
 import java.util.Scanner;
 
-public class BOJ10986 {
+public class Q5_BOJ10986 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

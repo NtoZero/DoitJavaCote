@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 // https://www.acmicpc.net/problem/11003
-public class BOJ11003 {
+public class Q10_BOJ11003 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

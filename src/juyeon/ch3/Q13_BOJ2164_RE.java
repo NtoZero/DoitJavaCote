@@ -1,4 +1,4 @@
-package juyeon.review;
+package juyeon.ch3;
 
 import _problems.ch3_data_structure.ch3_5_stack_queue.P13_2164;
 
@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class BOJ2164_RE implements P13_2164 {
+public class Q13_BOJ2164_RE implements P13_2164 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

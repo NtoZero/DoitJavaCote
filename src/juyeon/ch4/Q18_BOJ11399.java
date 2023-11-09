@@ -3,7 +3,7 @@ package juyeon.ch4;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BOJ11399 {
+public class Q18_BOJ11399 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();

@@ -1,10 +1,9 @@
 package juyeon.ch3;
 
 import java.io.*;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class BOJ11660 {
+public class Q4_BOJ11660 {
     public static void main(String[] args) throws IOException {
 //        Scanner sc = new Scanner(System.in);
 //        int N = sc.nextInt();

@@ -1,11 +1,11 @@
-package juyeon.review;
+package juyeon.ch3;
 
 import _problems.ch3_data_structure.ch3_3_two_pointer.P10_11003;
 
 import java.io.*;
 import java.util.*;
 
-public class BOJ11003_RE implements P10_11003 {
+public class Q10_BOJ11003_RE implements P10_11003 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

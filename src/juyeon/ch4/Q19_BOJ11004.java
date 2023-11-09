@@ -2,9 +2,8 @@ package juyeon.ch4;
 
 import java.io.*;
 import java.util.*;
-import java.util.List;
 
-public class BOJ11004 {
+public class Q19_BOJ11004 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

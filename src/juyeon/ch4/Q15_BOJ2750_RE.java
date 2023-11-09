@@ -1,14 +1,12 @@
-package juyeon.review;
+package juyeon.ch4;
 
 import _problems.ch4.ch4_arrays.P15_2750;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.PriorityQueue;
 
-public class BOJ2750_RE implements P15_2750 {
+public class Q15_BOJ2750_RE implements P15_2750 {
     public static void main(String[] args) throws IOException {
 
         // (1) Arrays.sort 로 짱 쉽게 풀기
