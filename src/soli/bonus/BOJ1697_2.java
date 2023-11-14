@@ -1,11 +1,13 @@
 package soli.bonus;
 
+import _problems.ch5_searching.ch5_1_dfs.PP2_1697;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ1697_2 {
+public class BOJ1697_2 implements PP2_1697 {
     static int result;
 
     public static void main(String[] args) throws IOException {

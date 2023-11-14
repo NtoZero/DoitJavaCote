@@ -1,5 +1,7 @@
 package soli.ch5;
 
+import _problems.ch5_searching.ch5_2_bfs.P28_1167;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,7 +9,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class BOJ1167 {
+public class BOJ1167 implements P28_1167 {
     static int V;
     static ArrayList<LinkedList<Node>> tree;    // 그래프를 인접리스트로
     static boolean[] visited;
