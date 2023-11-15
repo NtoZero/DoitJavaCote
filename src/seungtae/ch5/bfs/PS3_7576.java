@@ -33,8 +33,8 @@ public class PS3_7576 implements PP3_7576 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        M = Integer.parseInt(st.nextToken()); // 열, x의 최대값<M
-        N = Integer.parseInt(st.nextToken()); // 행, y의 최대값<N
+        M = Integer.parseInt(st.nextToken()); // 열, y의 최대값<M
+        N = Integer.parseInt(st.nextToken()); // 행, x의 최대값<N
 
         tomatoes = new int[N][M]; // 행렬
         visited = new boolean[N][M]; // 방문
@@ -47,31 +47,52 @@ public class PS3_7576 implements PP3_7576 {
                     q.add(new int[]{i, j});
                     rootX = i; rootY = j;
                 }
+                if(tomatoes[i][j]!=0) visited[i][j]=true; // 방문할 필요X (-1, 2 등)
             }
         }
 
         bfs(rootX, rootY);
 
+        // 모든 배열을 방문하지 않았으면 익는 것이 불가능 => -1 출력
+        boolean impossible = false;
+        for(int i=0; i<N; i++) {
+            for(int j=0; j<M; j++) {
+                if(!visited[i][j]) {
+                    impossible = true;
+                    break;
+                }
+            }
+        }
+
+        if(cnt==0) {
+            cnt = 0; // 0일 때
+        } else if(cnt!=0) {
+            cnt = cnt-1; // 1부터 시작
+        }
+        if(impossible) cnt=-1;
+
         System.out.println(cnt);
     }
 
     static void bfs(int x, int y) {
-        if(visited[x][y]) return;
         visited[x][y] = true;
 
         while(!q.isEmpty()) {
             int[] elements = q.poll();
+            int curX = elements[0];
+            int curY = elements[1];
 
             for(int i=0; i<4; i++) {
-                int nextX = elements[0]+dx[i];
-                int nextY = elements[1]+dy[i];
+                int nextX = curX + dx[i];
+                int nextY = curY + dy[i];
 
-                if((nextX>=0 && nextX<M) && (nextY>=0 && nextY<N) && tomatoes[nextX][nextY]==0) {
+                if((nextX>=0 && nextX<N) && (nextY>=0 && nextY<M) && tomatoes[nextX][nextY]==0) {
                     if(!visited[nextX][nextY]) {
                         q.add(new int[]{nextX, nextY});
                         // 이전 노드 +1로 distance 더하기
-                        tomatoes[nextX][nextY] = tomatoes[x][y]+1;
+                        tomatoes[nextX][nextY] = tomatoes[curX][curY]+1;
                         if(tomatoes[nextX][nextY] > cnt) cnt = tomatoes[nextX][nextY];
+                        visited[nextX][nextY] = true;
                     }
                 }
             }
