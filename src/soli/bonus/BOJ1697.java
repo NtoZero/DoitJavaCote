@@ -1,13 +1,13 @@
 package soli.bonus;
 
-import _problems.bonus.DFS_1697;
+import _problems.ch5_searching.ch5_1_dfs.PP2_1697;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ1697 implements DFS_1697 {
+public class BOJ1697 implements PP2_1697 {
 
     // 거리가 인덱스, 저장 값은 초
     static int[] distance = new int[100001];
