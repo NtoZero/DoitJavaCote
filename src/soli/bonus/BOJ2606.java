@@ -1,6 +1,6 @@
 package soli.bonus;
 
-import _problems.bonus.DFS_2606;
+import _problems.ch5_searching.ch5_1_dfs.PP1_2606;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.StringTokenizer;
 
-public class BOJ2606 implements DFS_2606 {
+public class BOJ2606 implements PP1_2606 {
 
     static ArrayList<Integer>[] A;
     static boolean[] visited;
