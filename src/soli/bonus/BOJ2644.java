@@ -1,6 +1,6 @@
 package soli.bonus;
 
-import _problems.bonus.DFS_2644;
+import _problems.ch5_searching.ch5_1_dfs.PP3_2644;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class BOJ2644 implements DFS_2644 {
+public class BOJ2644 implements PP3_2644 {
 
     static ArrayList<Integer>[] A;
     static boolean[] visited;
