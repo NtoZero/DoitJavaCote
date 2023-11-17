@@ -1,4 +1,4 @@
-package seungtae.ch5.bfs;
+package seungtae.ch5.ch5_2bfs;
 
 import _problems.ch5_searching.ch5_2_bfs.P28_1167;
 
