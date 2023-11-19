@@ -10,14 +10,13 @@ import java.util.Scanner;
 // 충격 실화 BFS 문제임 !
 public class additional_BOJ1697 implements PP2_1697 {
 
-    static int N, K;
     static int[] visited;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        N = sc.nextInt();
-        K = sc.nextInt();
+        int N = sc.nextInt();
+        int K = sc.nextInt();
 
         BFS(N, K);
     }
