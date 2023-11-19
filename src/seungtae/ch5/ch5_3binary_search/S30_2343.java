@@ -43,9 +43,9 @@ public class S30_2343 implements P30_2343 {
         // start와 end 사이에서 이분 탐색
         // 시작 인덱스 <= 종료 인덱스 가 기준점
         while(start <= end) {
-            int mid  = (end-start)/2;
-            int sum = 0;
-            int count = 0;
+            int mid  = (start+end)/2; // 최소값 + 최대값의 중앙값
+            int sum = 0; // 강의 시간 합
+            int count = 0; // 현재 사용한 블루레이 개수
             // mid값으로 모든 레슨을 저장할 수 있는지 여부
             for(int i=0; i<N; i++) {
                 if(sum + arr[i] > mid) {
