@@ -21,6 +21,8 @@ public class BOJ1300 implements P31_1300 {
 
             for (int i = 1; i <= N; i++) {
                 // 중간값보다 작은 수 찾아서 count
+                // mid = 4
+                // 3 + 2 + 1 = 6
                 count += Math.min(mid / i, N);
             }
 
