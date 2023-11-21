@@ -1,10 +1,9 @@
-package seungtae.ch5.dfs;
+package seungtae.ch5.ch5_1dfs;
 
 import _problems.ch5_searching.ch5_1_dfs.P25_13023;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class S25_13023 implements P25_13023 {
