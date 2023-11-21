@@ -1,4 +1,4 @@
-package juyeon.ch5;
+package juyeon.additional;
 
 import _problems.ch5_searching.ch5_1_dfs.PP1_2606;
 
@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-public class additional_BOJ2606 implements PP1_2606 {
+public class BOJ2606 implements PP1_2606 {
 
     static ArrayList<Integer>[] arr;
     static int count;

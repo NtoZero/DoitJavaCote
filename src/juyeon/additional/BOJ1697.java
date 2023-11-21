@@ -1,4 +1,4 @@
-package juyeon.ch5;
+package juyeon.additional;
 
 
 import _problems.ch5_searching.ch5_1_dfs.PP2_1697;
@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 // 충격 실화 BFS 문제임 !
-public class additional_BOJ1697 implements PP2_1697 {
+public class BOJ1697 implements PP2_1697 {
 
     static int[] visited;
 

@@ -1,4 +1,4 @@
-package juyeon.ch5;
+package juyeon.additional;
 
 import _problems.ch5_searching.ch5_2_bfs.PP1_1012;
 
@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class additional_BOJ1012 implements PP1_1012 {
+public class BOJ1012 implements PP1_1012 {
 
     static int M, N;
     static int[][] map;
