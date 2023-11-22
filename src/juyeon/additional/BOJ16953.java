@@ -1,4 +1,4 @@
-package juyeon.ch5;
+package juyeon.additional;
 
 import _problems.ch5_searching.ch5_2_bfs.PP2_16953;
 
@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class additional_BOJ16953 implements PP2_16953 {
+public class BOJ16953 implements PP2_16953 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

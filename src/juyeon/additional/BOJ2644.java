@@ -1,4 +1,4 @@
-package juyeon.ch5;
+package juyeon.additional;
 
 import _problems.ch5_searching.ch5_1_dfs.PP3_2644;
 
@@ -11,7 +11,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 // 또 BFS네용
-public class additional_BOJ2644 implements PP3_2644 {
+public class BOJ2644 implements PP3_2644 {
 
     static ArrayList<Integer>[] arr;
     static boolean[] visited;
