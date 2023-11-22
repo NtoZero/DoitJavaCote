@@ -1,4 +1,4 @@
-package juyeon.ch5;
+package juyeon.additional;
 
 import _problems.ch5_searching.ch5_2_bfs.PP3_7576;
 
@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class additional_BOJ7576 implements PP3_7576 {
+public class BOJ7576 implements PP3_7576 {
 
     static class Tomato {
         int x, y, day;
