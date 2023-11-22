@@ -1,4 +1,4 @@
-package seungtae.greedy;
+package seungtae.ch6.greedy;
 
 import _problems.ch6_greedy.P32_11047;
 
