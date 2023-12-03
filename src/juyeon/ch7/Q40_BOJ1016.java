@@ -26,6 +26,8 @@ public class Q40_BOJ1016 implements P40_1016 {
 
         for (long i = 2; i * i <= max; i++) {
             long pow = i * i;
+
+            // 시작점 최적화 ( GPT가 도와줌)
             long start = (min / pow) * pow;
 
             for (long j = start; j <= max; j+= pow) {
