@@ -42,7 +42,7 @@ public class BOJ1456_2 {
                     if(almostPrime >= start) {
                         count++;
                     }
-                    if(Long.MAX_VALUE / i < almostPrime) break; // 오버플로 방지
+                    if(Long.MAX_VALUE / i < almostPrime) break; // 오버플로 방지 -> LONG 타입 넘으면 안됨
                     almostPrime *= i;
                 }
             }
@@ -50,3 +50,5 @@ public class BOJ1456_2 {
         System.out.println(count);
     }
 }
+
+//https://ko.khanacademy.org/computing/computer-science/cryptography/comp-number-theory/v/sieve-of-eratosthenes-prime-adventure-part-4
