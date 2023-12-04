@@ -15,7 +15,7 @@ public class BOJ1747 implements P39_1747 {
         int N = Integer.parseInt(br.readLine());
         int MAX =  2000000;
 
-        boolean[] isPrime = sieve(MAX);
+        boolean[] isPrime = new boolean[MAX];
 
         for(int i = N ; i < isPrime.length ; i++) {
             if(isPrime[i] && isPalindrome(i)) {
@@ -23,7 +23,6 @@ public class BOJ1747 implements P39_1747 {
                 break;
             }
         }
-
 
     }
 
@@ -47,7 +46,7 @@ public class BOJ1747 implements P39_1747 {
             isPrime[i] = true;
         }
 
-        for(int i = 2 ; i * i <= MAX ; i++) {
+        for(int i = 2 ; i * i <= Math.sqrt(MAX) ; i++) {
             if(isPrime[i] == true) {
                 // j 배수들 다 false
                 for(int j = i * i ; j <= MAX ; j+= i) {
@@ -60,3 +59,56 @@ public class BOJ1747 implements P39_1747 {
 
 
 }
+
+
+/*
+    public static class BOJ1747 {
+        static int[] arr = new int[10000001];
+        public static void main(String[] args) {
+            // 초기화
+            for (int i = 2; i < arr.length; i++) {
+                arr[i] = i;
+            }
+
+            isPrime();
+
+            Scanner sc = new Scanner(System.in);
+
+            int N = sc.nextInt();
+
+            while (true) {
+                if (arr[N] != 0 && isPalindrome(N)) {
+                    System.out.println(N);
+                    break;
+                }
+                N++;
+            }
+        }
+
+        public static boolean isPalindrome(int N){
+            String s = String.valueOf(N);
+            char[] charArray = s.toCharArray();
+            int startIdx = 0;
+            int endIdx = s.length() - 1;
+
+            while (startIdx < endIdx){
+                if (charArray[startIdx] != charArray[endIdx]){
+                    return false;
+                }
+                startIdx++;
+                endIdx--;
+            }
+
+            return true;
+        }
+
+        public static void isPrime(){
+            for (int i = 2; i < Math.sqrt(arr.length); i++) {
+                if (arr[i] == 0) continue;
+                for (int j = i + i; j < arr.length; j += i) {
+                    arr[j] = 0;
+                }
+            }
+        }
+    }
+ */
