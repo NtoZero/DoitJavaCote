@@ -15,7 +15,7 @@ public class S39_1747 implements P39_1747 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System. in));
         int N = Integer.parseInt(br.readLine());
-        int[] arr = new int[1000000+1];
+        int[] arr = new int[10000001]; // N의 최댓값이 100만이다. 오해X.
         for(int i=2; i<arr.length; i++) {
             arr[i] = i;
         }
