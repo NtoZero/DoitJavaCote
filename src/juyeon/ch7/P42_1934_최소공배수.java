@@ -7,7 +7,7 @@ import java.util.StringTokenizer;
 
 // 유클리드 호제법 https://imkh.dev/algorithm-gcd-lcm
 
-public class Q42_BOJ1934 {
+public class P42_1934_최소공배수 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 

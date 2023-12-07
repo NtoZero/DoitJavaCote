@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 // ❌❌❌ 런타임 에러 ( long 타입으로 받아야 되는데, long으로 받아도 배열 크기가 long 범위를 벗어나서 안 댐)
-public class Q41_BOJ11689 {
+public class P41_11689_오일러_피 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

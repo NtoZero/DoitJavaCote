@@ -3,7 +3,7 @@ package juyeon.ch7;
 import java.util.Scanner;
 
 // 시간 초과
-public class Q41_BOJ11689_2 {
+public class P41_11689_오일러_피_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
