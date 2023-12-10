@@ -6,6 +6,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * GCD(n, k ) = 1
+ * 최대 공약수가 1 = 두 수는 서로소
+ * 주어지는 수 n과 n이하의 자연수 k사이 서로소의 개수 구하기
+ */
 public class BOJ11689 implements P41_11689 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
