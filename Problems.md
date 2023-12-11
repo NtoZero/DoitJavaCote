@@ -129,5 +129,5 @@
 - 최소 신장 트리
 64. 최소 신장 트리 구하기(1197) : https://www.acmicpc.net/problem/1197
 65. 다리 만들기(17472) : https://www.acmicpc.net/problem/17472
-66. 불우이웃 돕ㅍ(1414) : https://www.acmicpc.net/problem/1414
+66. 불우이웃 돕기(1414) : https://www.acmicpc.net/problem/1414
 
