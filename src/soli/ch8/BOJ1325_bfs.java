@@ -41,8 +41,6 @@ public class BOJ1325_bfs implements P47_1325 {
             arr[A].add(B);
         }
 
-        count = new int[N+1];
-
         // visited = new boolean[N+1]
         // 일반적으로는 이렇게 되는데 초기화를 for문 안에서 시켜줘서 미방문 상태가 되고
         // 노드마다 다시 방문하게 됨
@@ -52,6 +50,7 @@ public class BOJ1325_bfs implements P47_1325 {
         }
 
         int max= 0;
+        count = new int[N+1];
 
         for(int i = 1 ; i <= N ; i++) {
             // bfs 탐색하고 나서 max값 찾기
@@ -63,9 +62,10 @@ public class BOJ1325_bfs implements P47_1325 {
         for(int i = 1; i<= N ; i++) {
             if(max == count[i]) {
                 bw.write(i + " ");
-                bw.close();
+
             }
         }
+        bw.close();
     }
 
     private static void bfs(int start) {
