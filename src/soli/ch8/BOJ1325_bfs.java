@@ -43,6 +43,9 @@ public class BOJ1325_bfs implements P47_1325 {
 
         count = new int[N+1];
 
+        // visited = new boolean[N+1]
+        // 일반적으로는 이렇게 되는데 초기화를 for문 안에서 시켜줘서 미방문 상태가 되고
+        // 노드마다 다시 방문하게 됨
         for(int i = 1; i <= N ; i++) {
             visited = new boolean[N+1];
             bfs(i);
@@ -79,9 +82,11 @@ public class BOJ1325_bfs implements P47_1325 {
                     // 방문 배열 count++
                     count[i]++;
                     visited[i] = true;
+                    // 큐 업데이트
                     Q.add(i);
                 }
             }
         }
     }
 }
+
