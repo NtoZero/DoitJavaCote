@@ -2,9 +2,7 @@ package soli.ch8;
 
 import _problems.ch8_graph.P47_1325;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
@@ -59,12 +57,17 @@ public class BOJ1325 implements P47_1325 {
             max = Math.max(max, count[i]);
         }
 
-        for(int i = 1; i <= N ; i++) {
-            if(count[i] == max) {
-                System.out.print( i + " ");
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        for(int i = 1; i<= N ; i++) {
+            if(max == count[i]) {
+                bw.write(i + " ");
+
             }
         }
+        bw.close();
     }
+
 
     private static void dfs(int start) {
         // 방문하면 start
