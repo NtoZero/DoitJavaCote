@@ -43,8 +43,8 @@ public class BOJ18352 implements P46_18352{
             A[start].add(end);
         }
 
-        result = new ArrayList<>();
         visited = new int[N+1];
+
         for(int i = 1; i <= N ;i++) {
             // 방문 하기 전 모든 배열 -1
             // 거리정보 초기화 => 0으로 하면 방문 한 도시, 안 한 도시 확인 못 함
@@ -54,6 +54,7 @@ public class BOJ18352 implements P46_18352{
         // bfs 반복
         bfs(X);
 
+        result = new ArrayList<>();
         for(int i = 1 ; i <= N ; i++) {
             if(visited[i] == K) {
                 result.add(i);
@@ -61,8 +62,6 @@ public class BOJ18352 implements P46_18352{
         }
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
-
 
         // 다 순회하고 K랑 똑같은 거 없으면
         // = result 배열에 아무것도 안 들어가 있으면
