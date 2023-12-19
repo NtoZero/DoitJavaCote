@@ -7,16 +7,19 @@ import java.util.*;
 
 public class P47_1325_효율적_해킹 {
 
+    static int N, M;
     static ArrayList<Integer>[] arr;
     static boolean[] visited;
     static int[] count;
+    static Queue<Integer> q;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
+        StringBuilder sb = new StringBuilder();
 
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
 
         arr = new ArrayList[N + 1];
         count = new int[N + 1];
@@ -39,7 +42,6 @@ public class P47_1325_효율적_해킹 {
         }
 
         int max = 0;
-        StringBuilder sb = new StringBuilder();
 
         for (int i = 1; i <= N; i++) {
             max = Math.max(max, count[i]);
@@ -64,7 +66,7 @@ public class P47_1325_효율적_해킹 {
     }
 
     private static void BFS(int node) {
-        Queue<Integer> q = new LinkedList<>();
+        q = new LinkedList<>();
 
         q.add(node);
 
