@@ -10,6 +10,8 @@ import java.util.StringTokenizer;
 
 public class BOJ1325_bfs implements P47_1325 {
 
+    static int N, M;
+
     // 배열 리스트
     static ArrayList<Integer>[] arr;
 
@@ -18,20 +20,24 @@ public class BOJ1325_bfs implements P47_1325 {
 
     static boolean[] visited;
 
+    static Queue<Integer> Q;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         // 컴퓨터 대수(노드수)
-        int N = Integer.parseInt(st.nextToken());
+        N = Integer.parseInt(st.nextToken());
         // 신뢰하는 관계(엣지수 -> 반복횟수)
-        int M = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
 
         arr = new ArrayList[N+1];
 
         for(int i = 1 ; i <= N ; i++) {
             arr[i] = new ArrayList<>();
         }
+
+        count = new int[N+1];
 
         for(int i = 0 ; i < M ; i++) {
             st = new StringTokenizer(br.readLine());
@@ -41,7 +47,7 @@ public class BOJ1325_bfs implements P47_1325 {
             arr[A].add(B);
         }
 
-        count = new int[N+1];
+
 
 //         visited = new boolean[N+1];
         // 일반적으로는 이렇게 되는데 초기화를 for문 안에서 시켜줘서 미방문 상태가 되고
@@ -72,7 +78,7 @@ public class BOJ1325_bfs implements P47_1325 {
     private static void bfs(int start) {
         visited[start] = true;
 
-        Queue<Integer> Q = new LinkedList<>();
+        Q = new LinkedList<>();
         Q.add(start);
 
         while(!Q.isEmpty()) {
