@@ -38,9 +38,7 @@ public class BOJ1717 implements P50_1717 {
             } else {
                 check(A,B);
             }
-
         }
-
     }
 
     // 합집합 대표노드로 연결
@@ -55,12 +53,18 @@ public class BOJ1717 implements P50_1717 {
     }
 
     private static int find(int a) {
-        if(a == index[a]) {
-            return a;
-        } else {
+//        if(a == index[a]) {
+//            return a;
+//        } else {
+//            // 1 3 (1 1) -> 3 7 (3 3 -> 1 1)
+//            return index[a] = find(index[a]);
+//        }
+        while(a != index[a]) {
             // 1 3 (1 1) -> 3 7 (3 3 -> 1 1)
-            return index[a] = find(index[a]);
+            index[a] = index[index[a]];
+            a = index[a];
         }
+        return a;
     }
 
     private static void check(int a, int b) {
