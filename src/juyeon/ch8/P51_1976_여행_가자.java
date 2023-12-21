@@ -57,12 +57,7 @@ public class P51_1976_여행_가자 {
         b = find(b);
 
         if (a != b) {
-            if (a < b) {
-                arr[b] = a;
-            } else {
-                arr[a] = b;
-            }
-
+            arr[b] = a;
         }
     }
 
