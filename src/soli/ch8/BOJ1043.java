@@ -72,6 +72,31 @@ public class BOJ1043 implements P52_1043 {
                 }
             }
         }
+        // 파티끼리 업데이트 시키기
+        boolean updated = true;
+
+        while(updated) {
+            updated = false;
+            for(int i = 0 ; i < M ; i++) {
+                boolean containsTruth = false;
+                for(int person : A[i]) {
+                    // 만약에 파티에 진실 아는 사람 있으면
+                    if(knowTruth[person]) {
+                        containsTruth = true;
+                        break;
+                    }
+                }
+                if(containsTruth) {
+                    for(int person : A[i]) {
+                        if(!knowTruth[person]) {
+                            // 만약에 하나라도 포함하면 true로 변경
+                            knowTruth[person] = true;
+                            updated = true;
+                        }
+                    }
+                }
+            }
+        }
 
         int count = 0;
         for(ArrayList<Integer> party : A) {
