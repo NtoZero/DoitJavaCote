@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-// 우선순위 큐 활용해서 풀어보기 ~~,,,,, 맞 왜 틀
+// 우선순위 큐 활용해서 풀어보기 ~~,,,
 class Node implements Comparable<Node> {
     int idx;
     int cost;
@@ -78,7 +78,7 @@ public class P54_1516_게임_개발_3 {
             Node v = pq.poll();
 
             for (int e : arr[v.idx]) {
-                result[e] = result[v.idx] + T[e];
+                result[e] = Math.max(result[e], result[v.idx] + T[e]);
 
                 if (--in[e] == 0) {
                     pq.add(new Node(e, result[e]));
