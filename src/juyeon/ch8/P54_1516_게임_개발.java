@@ -41,7 +41,9 @@ public class P54_1516_게임_개발 {
         int max = 0;
 
         for (int i = 1; i <= N; i++) {
+
             if (T[i].size() > 1) {
+
                 for (int j = 0; j < T[i].size() - 1; j++) {
 
                     int current = T[T[i].get(j + 1)].get(0);
