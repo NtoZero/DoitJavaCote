@@ -44,6 +44,7 @@ public class S51_1976 implements P51_1976 {
             arr[i] = i;
         }
 
+        //배열 안받고 바로 시작해도 됨
         cities = new int[N+1][N+1]; // 도시간 연결 정보
         for(int i=1; i<=N; i++) { //N개의 줄
             StringTokenizer st = new StringTokenizer(br.readLine());
