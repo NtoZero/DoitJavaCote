@@ -27,7 +27,7 @@ public class BOJ1516 implements P54_1516 {
         }
 
         // 걸리는 시간, 먼저 지어져야 하는 건물의 번호
-        for(int i = 0 ; i < N ; i++ ){
+        for(int i = 1 ; i <= N ; i++ ){
             StringTokenizer st = new StringTokenizer(br.readLine());
             time[i] = Integer.parseInt(st.nextToken());
 
@@ -42,15 +42,20 @@ public class BOJ1516 implements P54_1516 {
                 indegree[i]++;
             }
         }
+
         Queue<Integer> Q = new LinkedList<>();
+
+        // 시간 결과 저장하는 배열
+        int[] result = new int[N+1];
+
         for(int i = 1; i <= N ; i++) {
+            result[i] = time[i];
             if(indegree[i] == 0) {
                 Q.add(i);
             }
         }
 
-        // 시간 결과 저장하는 배열
-        int[] result = new int[N+1];
+
 
         while (!Q.isEmpty()) {
             int current = Q.poll();
@@ -66,7 +71,7 @@ public class BOJ1516 implements P54_1516 {
             }
         }
         for(int i = 1; i <= N ;i++) {
-            System.out.println(result[i] + time[i]);
+            System.out.println(result[i]);
         }
     }
 }
