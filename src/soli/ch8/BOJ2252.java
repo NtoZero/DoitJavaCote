@@ -48,7 +48,7 @@ public class BOJ2252 implements P53_2252 {
             }
         }
 
-        while(Q.isEmpty()) {
+        while(!Q.isEmpty()) {
             int current = Q.poll();
             System.out.println(current + " ");
             // 현재 연결된 진입 차수 감소
