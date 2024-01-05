@@ -100,7 +100,7 @@ public class S52_1043 implements P52_1043 {
             int cur = party[i].get(0);
             for(int j=0; j<trueP.length; j++) { // 진실을 아는 사람들
                 if (find(cur) == find(trueP[j])) { // 한 사람 이라도 진실을 아는 사람이 있다면
-                    isPossible = true;
+                    isPossible = false;
                     break;
                 }
             }
